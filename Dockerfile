@@ -1,11 +1,9 @@
 FROM node:16.16.0
 
-WORKDIR /TALLERGITHUBACTIONS
+WORKDIR /tallergithubactions
 
 COPY package*.json ./
 
 RUN npm install
 
 COPY . .
-
-CMD [ "echo", "Docker build" ]
