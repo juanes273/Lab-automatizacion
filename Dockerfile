@@ -1,6 +1,6 @@
 FROM node:16.16.0
 
-WORKDIR /app
+WORKDIR /TALLERGITHUBACTIONS
 
 COPY package*.json ./
 
@@ -8,6 +8,4 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 3000
-
-CMD [ "npm" ]
+CMD [ "echo", "Docker build" ]
